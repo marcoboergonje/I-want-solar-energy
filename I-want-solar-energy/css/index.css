@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page-header{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.navigation{
+    width: 100%;
+    text-align: center;
+    height: 80px;
+}
+
+.navigation > ul{
+    width: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.navigation > ul > li{
+    float: left;
+    list-style: none;
+    width: 15%;
+    padding: 25px;
+}
+
+.navigation > ul > li > a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* index page */
+
+.home-vid{
+    margin-top: 10vh;
+}
+
+.page-content{
+    display: flex;
+    margin-top: 10vh;
+    width: 100%;
+}
+
+.article-section {
+    width: 100%;
+}
+
+article{
+    margin: 125px 50px;
+    width: 70%;
+}
+
+.product-img{
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+.reason-section{
+    width: 40%;
+}
+
+.reasons-aside{
+    float: left;
+}
+
+.cookie-section{
+    position: fixed;
+    padding: 15px 20px;
+    right: 0px;
+    bottom: 50px;
+    color: #fff;
+    background-color: #FA0;
+    opacity: 50%;
+}
+
+footer{
+    height: 50px;
+    background-color: rgb(136, 163, 165);
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer > p{
+    margin-top: 15px;
+}
+
+/* EUsolar page */
+
+table.tableizer-table {
+    font-size: 15px;
+    border: 1px solid #CCC; 
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.tableizer-table td {
+    padding: 4px;
+    margin: 3px;
+    border: 1px solid #CCC;
+}
+.tableizer-table th {
+    background-color: #104E8B; 
+    color: #FFF;
+    font-weight: bold;
+}
+
+/* Contact page */
+.contact-form{
+    width: 70%;
+    padding: 40px;
+}
+
+.contact-form > header > h2{
+    margin-bottom: 30px;
+}
+
+input[type=text], input[type=email], textarea{
+    height: 35px;
+    width: 90%;
+    margin: 15px
+}
+
+input[type=submit]{
+    background-color: rgb(76, 155, 76);
+    color: #ffffff;
+    padding: 15px 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin: 15px;
+}
+
