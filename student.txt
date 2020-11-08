@@ -1,4 +1,4 @@
 Student name: Marco Boergonje
 Student number: 670012
-Student class: HAINF1SB
+Student class: HAINFVT1B
 URL student GitHub repository: https://github.com/marcoboergonje/I-want-solar-energy 
