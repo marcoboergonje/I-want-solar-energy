@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Notable', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-header{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.navigation{
+    width: 100%;
+    text-align: center;
+    height: 80px;
+}
+
+.navigation > ul{
+    width: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.navigation > ul > li{
+    float: left;
+    list-style: none;
+    width: 15%;
+    padding: 25px;
+}
+
+.navigation > ul > li > a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* index page */
+
+.home-vid{
+    margin-top: 10vh;
+}
+
+.page-content{
+    display: flex;
+    margin-top: 10vh;
+    width: 100%;
+}
+
+.article-section {
+    width: 100%;
+}
+
+article{
+    margin: 125px 50px;
+    width: 70%;
+}
+
+.product-img{
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+.reason-section{
+    width: 40%;
+}
+
+.reasons-aside{
+    float: left;
+}
+
+.cookie-section{
+    position: fixed;
+    padding: 15px 20px;
+    right: 0px;
+    bottom: 50px;
+    color: #fff;
+    background-color: #FA0;
+    opacity: 50%;
+}
+
+footer{
+    height: 50px;
+    background-color: rgb(136, 163, 165);
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer > p{
+    margin-top: 15px;
+}
+
+/* How it works */
+.grid-section{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.grid-section > article{
+    border: 1px solid black;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+.block-1{
+    grid-area: one;
+    background-color: grey;
+}
+
+.block-2{
+    grid-area: two;
+    background-color: rgb(70, 70, 70);
+}
+
+.block-3{
+    grid-area: three;
+    background-color: #fff;
+}
+
+.block-4{
+    grid-area: four;
+    background-color: grey;
+}
+
+.block-5{
+    grid-area: five;
+    background-color: rgb(167, 167, 167);
+}
+
+.block-6{
+    grid-area: six;
+    background-color: rgb(63, 63, 63);
+}
+.grid-section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    'two one three'
+    'two one three'
+    'five one three'
+    'five one four'
+    'five one four'
+    'five one four'
+    'five six six';
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 480px){
+    .grid-section{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        'one two'
+        'one two'
+        'three two'
+        'three five'
+        'three five'
+        'three five'
+        'six six'
+        'six six';
+        grid-auto-rows: 100px;
+        grid-gap: 10px;
+    }
+
+    .grid-section{
+        width: 100%;
+        margin-left: 18%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .grid-section{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        'five'
+        'five'
+        'five'
+        'three'
+        'three'
+        'three'
+        'two'
+        'two'
+        'two'
+        'one'
+        'one'
+        'one';
+        grid-auto-rows: 100px;
+        grid-gap: 10px;
+    }
+
+    .block-4{
+        display: none;
+    }
+
+    .block-6{
+        display: none;
+    }
+
+    .grid-section{
+        width: 100%;
+        margin-left: 18%;
+    }
+}
+
+/* EUsolar page */
+
+table.tableizer-table {
+    font-size: 15px;
+    border: 1px solid #CCC; 
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.tableizer-table td {
+    padding: 4px;
+    margin: 3px;
+    border: 1px solid #CCC;
+}
+.tableizer-table th {
+    background-color: #104E8B; 
+    color: #FFF;
+    font-weight: bold;
+}
+
+/* Contact page */
+.contact-section{
+    display: flex;
+    margin-bottom: 85px;
+}
+
+.contact-form{
+    width: 60%;
+    padding: 40px;
+}
+
+.contact-form > header > h2{
+    margin-bottom: 30px;
+}
+
+input[type=text], input[type=email], textarea{
+    height: 35px;
+    width: 90%;
+    margin: 15px
+}
+
+input[type=submit]{
+    background-color: rgb(76, 155, 76);
+    color: #ffffff;
+    padding: 15px 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin: 15px;
+}
+
+.products{
+    margin: 30px;
+}
